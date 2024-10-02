@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.icon-section {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icon {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    border-radius: 3rem;
+    text-align: center;
+    margin: 10px;
+    flex-basis: 30%;
+    cursor: pointer;
+    
+}
+
+.icon:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.news, .forms-templates {
+    width: 48%;
+}
+
+.news-item {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.news-item img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.form-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.form-category {
+    background-color: #80D0C7;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    flex-basis: 45%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form-category:hover {
+    background-color: #0093E9;
+}
+
+.quick-access {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.quick-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-link {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.quick-link:hover {
+    background-color: #0056b3;
+}
+
+.birthdays-social {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.birthdays, .social-corner {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+}
+
+.birthdays ul {
+    list-style: none;
+}
+
+.social-post {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .icon {
+        flex-basis: 45%;
+    }
+
+    .content, .birthdays-social {
+        flex-direction: column;
+    }
+
+    .news, .forms-templates, .birthdays, .social-corner {
+        width: 100%;
+    }
+
+    .quick-link {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.svg{
+    background: linear-gradient(to right, #2100b3);
+    padding-top: 100%;
+}
+.form-category1 {
+    background-color: purple;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    flex-basis: 45%;
+    text-align: center;
+    cursor: pointer;
+}
+.quick-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.quick-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.quick-link-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #4a90e2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+}
